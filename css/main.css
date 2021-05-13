@@ -55,6 +55,11 @@ main > .desc {
     font-weight: 100;
 }
 
+.open {
+    font-size: 1.9rem;
+    margin: 2.8rem 0;
+    font-weight: 200;
+}
 
 .icons-social i {
     padding: 15px;
