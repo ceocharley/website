@@ -2,13 +2,6 @@ var collection=[];// final collection of sounds to play
 var loadedIndex=0;// horrible way of forcing a load of audio sounds
 
 
-function delay(n){
-    return new Promise(function(resolve){
-        setTimeout(resolve,n*1000);
-    });
-}
-
-
 // remap audios to a buffered collection
 function init(audios) {
     for(var i=0;i<audios.length;i++) {
@@ -35,7 +28,6 @@ function loaded() {
 async function playLooped() {
     let audio = Math.floor(Math.random() * (collection.length));
     audio = collection[audio];
-    await delay(1.2);
     audio.play();
     setTimeout(playLooped, audio.duration * 1000);
 }
