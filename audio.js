@@ -36,4 +36,8 @@ init([
     '/assets/audio/5.mp3',
     '/assets/audio/6.mp3',
     '/assets/audio/7.mp3',
+    '/assets/audio/8.mp3',
+    '/assets/audio/9.mp3',
+    '/assets/audio/10.mp3',
+    '/assets/audio/11.mp3',
 ]);
