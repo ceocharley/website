@@ -2,7 +2,7 @@ main {
     color: #FAFAFA;
     background: linear-gradient(-45deg, #ee00ff, #8d5bf6, #1fd2ff );
     background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+    animation: gradient 9s ease infinite;
     height: 100vh;
 }
 
@@ -21,9 +21,19 @@ main {
 
 
 .icons-social a {
-    color: #FAFAFA;
+    color: #FFFFFF;
 }
 
 .icons-social a svg path{
-    fill: #FAFAFA;
+    fill: #FFFFFF;
+}
+
+.fab:hover {
+    color: #CCCCCC;
+    transition-duration: 250ms;
+}
+
+.fas:hover {
+    color: #CCCCCC;
+    transition-duration: 250ms;
 }
