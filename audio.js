@@ -26,14 +26,13 @@ function loaded() {
 async function playLooped() {
     let audio = Math.floor(Math.random() * (collection.length));
     audio = collection[audio];
-    // check if the user has interacted with the site before playing
-    if(document.hasFocus()) {
-        return;
-    }
-    else {
+    // dont play audio until user has interacted with page
+    await new Promise(resolve => {
+        document.addEventListener('click', resolve);
+    });
     audio.play();
     setTimeout(playLooped, audio.duration * 1000);
-}}
+}
 
 init([
     '/assets/audio/1.mp3', // fell in luv -carti
