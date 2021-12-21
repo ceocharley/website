@@ -1,3 +1,8 @@
+/* hey friend! */
+/* doing a little snoopy snoop? */
+/* thats cool! */
+/* please excuse my lack of ability to code well */
+
 html {
     font-family: 'Raleway', sans-serif;
 }
@@ -57,29 +62,12 @@ main > .lazy {
     font-weight: 100;
 }
 
-.open {
-    font-size: 1.9rem;
-    margin: 2.8rem 0;
-    font-weight: 200;
-}
-
-.icons-social i {
-    padding: 15px;
-}
-
-.devto {
-    margin-bottom: -0.20rem;
-}
-
-.devto svg {
-    margin-bottom: -0.20rem;
-    margin-left: 0.675rem;;
-    width: 2.65rem;
-    height: 2.65rem;
-}
-
 main > .copyright {
     font-size: 1.3rem;
     margin: 1rem;
     font-weight: 50;
+}
+
+.icons-social i {
+    padding: 15px;
 }
