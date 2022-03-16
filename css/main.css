@@ -63,6 +63,7 @@ main > .lazy {
 }
 
 main > .copyright {
+    font-family: 'Outfit', sans-serif;
     font-size: 1.3rem;
     margin: 1rem;
     font-weight: 50;
