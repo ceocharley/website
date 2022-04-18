@@ -43,4 +43,5 @@ init([
     '/assets/audio/6.mp3', // vamp anthem -carti
     '/assets/audio/7.mp3', // wokeuplikethis* -carti
     '/assets/audio/8.mp3', // xo tour life -uzi
+    '/assets/audio/9.mp3', // money so big -yeat
 ]);
