@@ -11,16 +11,23 @@ body {
   background: #fafafa;
   transition: color 0.2s ease;
   transition: background 0.2s ease;
+  -moz-transition: background 0.2s ease;
+  -webkit-transition: background 0.2s ease;
 }
 
 a {
   color: #00aaff;
   text-decoration: none;
   transition: filter 0.2s;
+  -moz-transition: filter 0.2s;
+  -webkit-transition: filter 0.2s;
 }
 
-a:hover {
+a:hover,
+a:focus,
+a:active {
   filter: brightness(0.795);
+  -webkit-filter: brightness(0.795);
 }
 
 li {
@@ -51,9 +58,34 @@ main {
   text-align: center;
 }
 
+#discord {
+  cursor: pointer;
+}
+
+.copied {
+  margin: 1rem !important;
+  padding: 0.5rem;
+  background-color: rgb(235, 235, 235);
+  border-radius: 0.5rem;
+  visibility: hidden;
+  font-size: 0.7rem;
+}
+
+.copy {
+  bottom: 0;
+  position: absolute;
+  margin: 1rem;
+  font-size: 0.85rem;
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background: #181818;
+    color: #fff;
+  }
+
+  .copied {
+    background-color: #333;
     color: #fff;
   }
 }/*# sourceMappingURL=style.css.map */
