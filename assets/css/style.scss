@@ -95,6 +95,21 @@ main {
 }
 
 
+.error-not-found {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.error-not-found img {
+    width: 96px;
+    height: 96px;
+}
+
+
 @media (prefers-color-scheme: dark) {
     body {
         background: $bg-dark;
