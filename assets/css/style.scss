@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Outfit:300,400,500,700&display=swap');
+
+
+$bg-light: #fafafa;
+$bg-dark: #181818;
+$clr-white: #fff;
+$clr-black: #000;
+$clr-dark: #333;
+$clr-light: rgb(235, 235, 235);
+$clr-primary: #00aaff;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    color: $clr-black;
+    background: $bg-light;
+    transition: color 0.2s ease;
+    -moz-transition: color 0.2s ease;
+    -webkit-transition: color 0.2s ease;
+    transition: background 0.2s ease;
+    -moz-transition: background 0.2s ease;
+    -webkit-transition: background 0.2s ease;
+}
+
+a {
+    color: $clr-primary;
+    text-decoration: none;
+    transition: filter 0.2s;
+    -moz-transition: filter 0.2s;
+    -webkit-transition: filter 0.2s;
+}
+
+a:hover,
+a:focus,
+a:active {
+    filter: brightness(0.795);
+    -webkit-filter: brightness(0.795);
+}
+
+li {
+    list-style: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+
+.introduction {
+    padding: 2rem;
+    text-align: center;
+}
+
+.info {
+    padding: 2rem;
+    text-align: center;
+}
+
+.social {
+    padding: 2rem;
+    text-align: center;
+}
+
+
+
+#discord {
+    cursor: pointer;
+}
+
+.copied {
+    margin: 1rem !important;
+    padding: .5rem;
+    background-color: $clr-light;
+    border-radius: 0.5rem;
+    visibility: hidden;
+    font-size: 0.7rem;
+}
+
+
+.copy {
+    bottom: 0;
+    position: absolute;
+    margin: 1rem;
+    font-size: 0.85rem;
+}
+
+
+.error-not-found {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.error-not-found img {
+    width: 96px;
+    height: 96px;
+}
+
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: $bg-dark;
+        color: $clr-white;
+    }
+    .copied {
+        background-color: $clr-dark;
+        color: $clr-white;
+    }
+}
