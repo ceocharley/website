@@ -76,6 +76,7 @@ main {
   position: absolute;
   margin: 1rem;
   font-size: 0.85rem;
+  text-align: center;
 }
 
 .error-not-found {
@@ -97,7 +98,6 @@ main {
     background: #181818;
     color: #fff;
   }
-
   .copied {
     background-color: #333;
     color: #fff;
