@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Outfit:300,400,500,700&display=swap");
 :root {
   --primary: #ff05ff;
   --bg: #fefaf7;
@@ -14,19 +13,55 @@
 }
 
 body {
-  font-family: "Outfit", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: var(--txt);
   background-color: var(--bg);
 }
 
 .hi {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: fadeInSlide 10s linear;
-  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.hi .meowuwu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.hi .meowuwu .inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.inner {
+  animation: fadeInSlide 1s ease-in-out;
+  animation-fill-mode: both;
+}
+
+.inner:nth-child(2) {
+  animation-delay: .5s;
+}
+
+.inner:nth-child(3) {
+  animation-delay: 1s;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 2rem;
+  gap: 1rem;
 }
 
 .hi.inactive {
@@ -39,6 +74,7 @@ body {
   padding: 2rem;
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+  text-align: center;
 }
 
 .inner h1 {
@@ -53,6 +89,63 @@ body {
   margin-bottom: 1rem;
   max-width: 500px;
 }
+
+.skill {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.skill i {
+  transition: all .15s linear;
+}
+
+#kotlin {
+  width: 2rem;
+  height: auto;
+  margin: 0 1rem;
+}
+
+#kotlin path {
+  fill: #000;
+  transition: all .15s linear;
+}
+
+#kotlin:hover>:nth-child(2) {
+  fill: #7d6fe2;
+}
+
+#kotlin:hover>:nth-child(4) {
+  fill: #0095d5;
+}
+
+#kotlin:hover>:nth-child(6) {
+  fill: #f18e33;
+}
+
+.fa-node-js:hover {
+  color: #8cc84b;
+}
+
+.fa-java:hover {
+  color: #f89820;
+}
+
+.fa-sass:hover {
+  color: #c66394;
+}
+
+.fa-js:hover {
+  color: #f0db4f;
+}
+
+.fa-css3-alt:hover {
+  color: #2965f1;
+}
+
+.fa-html5:hover {
+  color: #e44d26;
+}
+
 
 .pfp img {
   border-radius: 50%;
@@ -253,8 +346,36 @@ a:hover {
   }
 }
 
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none!important;
+    transition: none!important;
+  }
+}
+
 
 @media screen and (max-width: 768px) {
+  .hi {
+    flex-direction: column!important;
+    width: 100%;
+    height: 100%;
+  }
+  .meowuwu {
+    flex-direction: column!important;
+    flex-wrap: wrap;
+  }
+  .meowuwu .inner {
+    margin: 1rem;
+  }
+  .inner {
+    padding: 1rem;
+  }
+  .inner h1 {
+    font-size: 2rem;
+  }
+  .inner p {
+    font-size: 1rem;
+  }
   .img-container {
     margin: 0;
   }
@@ -290,5 +411,8 @@ a:hover {
   .inner {
     background-color: #1b1b1b;
     box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+  }
+  #kotlin path {
+    fill: #fff;
   }
 }
